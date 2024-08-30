@@ -19,20 +19,12 @@ ext {
 }
 
 dependencies {
-	// Uncomment the following lines if you need these dependencies:
-	// implementation 'org.springframework.boot:spring-boot-starter'
-	// implementation 'org.springframework.cloud:spring-cloud-function-context'
-
-	// Spring Cloud Config Client
+	//implementation 'org.springframework.boot:spring-boot-starter'
+	//implementation 'org.springframework.cloud:spring-cloud-function-context'
 	implementation 'org.springframework.cloud:spring-cloud-starter-config'
-
-	// Spring Cloud Stream RabbitMQ Binder
 	implementation 'org.springframework.cloud:spring-cloud-stream-binder-rabbit'
-
-	// Retry support
 	implementation 'org.springframework.retry:spring-retry'
 
-	// Test dependencies
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
 	testImplementation 'io.projectreactor:reactor-test'
 	testImplementation 'org.springframework.cloud:spring-cloud-stream-test-binder'

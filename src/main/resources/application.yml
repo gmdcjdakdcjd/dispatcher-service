@@ -8,7 +8,7 @@ spring:
     import: "optional:configserver:"
   cloud:
     config:
-      uri: http://config-service:80 # localhost 대신 Kubernetes 서비스 이름 사용
+      uri: http://localhost:8888
       request-connect-timeout: 5000 # 5s
       request-read-timeout: 5000 # 5s
       fail-fast: false # In production, set to true
@@ -27,7 +27,7 @@ spring:
         packlabel-out-0:
           destination: order-dispatched
   rabbitmq:
-    host: polar-rabbitmq # localhost 대신 RabbitMQ의 Kubernetes 서비스 이름 사용
+    host: localhost
     port: 5672
     username: user
     password: password

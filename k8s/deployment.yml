@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: dispatcher-service
-          image: ghcr.io/gmdcjdakdcjd/dispatcher-service:latest
+          image: dispatcher-service
           imagePullPolicy: IfNotPresent
           lifecycle:
             preStop:

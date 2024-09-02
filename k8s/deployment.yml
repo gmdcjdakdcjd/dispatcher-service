@@ -4,15 +4,21 @@ metadata:
   name: dispatcher-service
   labels:
     app: dispatcher-service
+    version: dispatcher
+    service: dispatcher-service
 spec:
   replicas: 1
   selector:
     matchLabels:
       app: dispatcher-service
+      version: dispatcher
+      service: dispatcher-service
   template:
     metadata:
       labels:
         app: dispatcher-service
+        version: dispatcher
+        service: dispatcher-service
     spec:
       containers:
         - name: dispatcher-service

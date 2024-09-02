@@ -4,11 +4,15 @@ metadata:
   name: dispatcher-service
   labels:
     app: dispatcher-service
+    version: dispatcher
+    service: dispatcher-service
 spec:
   type: ClusterIP
   selector:
     app: dispatcher-service
+    version: dispatcher
   ports:
-  - protocol: TCP
-    port: 80
-    targetPort: 9003
+    - protocol: TCP
+      port: 80
+      name: tcp
+      targetPort: 9003

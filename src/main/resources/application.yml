@@ -40,3 +40,5 @@ spring:
 #    base-url: http://zipkin-service:80 # Zipkin 서버의 URL을 설정합니다
 #    sender:
 #      type: web # HTTP를 통해 Zipkin에 데이터를 전송합니다
+
+# for version change
